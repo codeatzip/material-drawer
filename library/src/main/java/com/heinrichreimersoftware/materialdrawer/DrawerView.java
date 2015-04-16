@@ -99,6 +99,7 @@ public class DrawerView extends ScrimInsetsFrameLayout implements ScrimInsetsFra
     private TextView textViewProfileName;
     private TextView textViewProfileDescription;
     private ImageView imageViewOpenProfileListIcon;
+    private ImageView downImageView;
 
     private LinearListView linearListViewProfileList;
 
@@ -272,6 +273,7 @@ public class DrawerView extends ScrimInsetsFrameLayout implements ScrimInsetsFra
         textViewProfileDescription = (TextView) findViewById(R.id.mdProfileDescription);
         imageViewOpenProfileListIcon = (ImageView) findViewById(R.id.mdOpenProfileListIcon);
         linearListViewProfileList = (LinearListView) findViewById(R.id.mdProfileList);
+        downImageView = (ImageView) findViewById(R.id.downImageView);
 
 
         linearListView = (LinearListView) findViewById(R.id.mdList);
@@ -291,6 +293,10 @@ public class DrawerView extends ScrimInsetsFrameLayout implements ScrimInsetsFra
 
     public TextView getSecondaryTextView() {
         return textViewProfileDescription;
+    }
+
+    public ImageView getDownImageView() {
+        return downImageView;
     }
 
 
